@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belated Birthday Wishes</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F5F5DC;
+            color: #5E4B3A;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: radial-gradient(#E8D9C5 2px, transparent 2px);
+            background-size: 20px 20px;
+        }
+        
+        .card {
+            background-color: #F8F4E9;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 600px;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        h1 {
+            color: #D4A373;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .balloon {
+            position: absolute;
+            width: 40px;
+            height: 60px;
+            background-color: #D4A373;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+        
+        .balloon:before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #5E4B3A;
+            top: 60px;
+            left: 19px;
+        }
+        
+        .balloon:nth-child(1) {
+            top: -20px;
+            left: 50px;
+            transform: rotate(15deg);
+            background-color: #E6B8A2;
+        }
+        
+        .balloon:nth-child(2) {
+            top: -10px;
+            right: 80px;
+            transform: rotate(-10deg);
+            background-color: #DDBEA9;
+        }
+        
+        .balloon:nth-child(3) {
+            bottom: -20px;
+            left: 70px;
+            transform: rotate(-15deg);
+            background-color: #CB997E;
+        }
+        
+        .balloon:nth-child(4) {
+            bottom: -10px;
+            right: 60px;
+            transform: rotate(10deg);
+            background-color: #E6B8A2;
+        }
+        
+        .cake {
+            font-size: 3rem;
+            margin: 20px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .signature {
+            font-style: italic;
+            margin-top: 30px;
+            font-size: 1.1rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        
+        <h1>Happy Belated Birthday!</h1>
+        <div class="cake">🎂</div>
+        <p>Even though this wish is late, the celebration in my heart for you is right on time! May this year bring you endless joy, success, and wonderful moments that make all your dreams come true.</p>
+        <p>Better late than never, right? Here's to making your next trip around the sun the best one yet!</p>
+        
+        <div class="signature">With warmest wishes,<br>[Your Bestie Chandni]</div>
+    </div>
+</body>
+</html>
